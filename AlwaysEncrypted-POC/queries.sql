@@ -13,3 +13,10 @@ CREATE TABLE [dbo].[Client](
 ) ON [PRIMARY]
 GO
 
+
+SELECT * FROM sys.column_master_keys
+SELECT * FROM sys.column_encryption_keys
+
+DROP COLUMN ENCRYPTION KEY myCEK
+DROP COLUMN MASTER KEY myCMK
+
